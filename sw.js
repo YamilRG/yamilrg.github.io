@@ -9,10 +9,10 @@ const APP_SHEll = [
     'img/avs/Debian.png', 
     'js/app.js', 
     'js/sw-acces.js']; 
-const APP_IMMUTABLE = [
-'https://fonts.googleapis.com/css?family=Quicksand:300,400',
+const APP_IMMUTABLE = ['https://fonts.googleapis.com/css?family=Quicksand:300,400',
 'https://fonts.googleapis.com/css?family=Lato:400,300',
-'https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css',
+'https://use.fontawesome.com/releases/v5.3.1/css/all.cs',
+'css/animate.cs',
 'js/libs/jquery.js'];
 
 

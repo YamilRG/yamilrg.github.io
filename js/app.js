@@ -1,5 +1,5 @@
 var url = window.location.href;
-var pwaLocation = 'https://yamilrg.github.io/sw.js';
+var pwaLocation = 'yamilrg.github.io/sw.js';
 
 if(navigator.serviceWorker){
     if(url.includes('localhost')){
