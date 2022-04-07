@@ -5,7 +5,7 @@ function actualizarCacheDinamico(dynamicCache, request, response){
         cache.put(request, response.clone());
             
         });
-        return cache.clone();
+        return dynamicCache.clone();
     }else{
         return response;
     }
