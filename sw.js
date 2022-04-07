@@ -44,28 +44,18 @@ self.addEventListener('activate', event => {
 
 //Estrategia de Cache
 
+	
 self.addEventListener('fetch', event => {
-    const respuestaFullback = caches.match(event.request).then(respuesta => {
-        if (respuesta) return respuesta;
-        console.log("No existe, error de red");
-
-        fetch(event.respuesta).then(newRespuesta => {
-            caches.open(DYNAMIC_CACHE).then(cache =>{
-                cache.put(event.request, newRespuesta);
-
+    const respuesta = caches.match(event.request).then( res => {
+        if(res){return res;}
+        else{
+            return fetch(e.request).then(newRes => {
+                //Agregar en el directorio /js un archivo llamdado sw-acces.js
+                //y programar la funcion actualizaCacheDinamico, para tener mas limpio el proyecto.
+                return actualizaCacheDinamico(DYNAMIC_CACHE, event.request, newRes);
             });
-            return newRespuesta.clone();
-
-        }).catch(error => {
-            console.log("catch fetch");
-            if(event.request.headers.get('accept').includes('text/html')){
-                return caches.match('/pages/no-response.html');
-            }
-
-        });
-
+        }
     });
-    event.respondWith(respuestaFullback);
 });
 
 
