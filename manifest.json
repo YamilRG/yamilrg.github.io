@@ -1,13 +1,16 @@
 {
     "short_name": "PWA",
-    "name": "Universidad Tecnologica de Torreon",
+    "name": "Universidad Tecnológica de Torreón",
     "start_url": "index.html",
-    "background_color": "#104163",
+    "background_color": "#3498db",
     "display": "standalone",
     "orientation": "portrait",
-    "icons": [{
-        "src": "img/icons/me-gusta.png",
-        "type": "image/png",
-        "sizes": "512x512"
-    }]
+    "theme_color": "#3498db",
+    "icons": [
+        {
+            "src": "/img/icons/icoon.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+      ]     
 }
