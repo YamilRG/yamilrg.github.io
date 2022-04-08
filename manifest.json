@@ -2,10 +2,10 @@
     "short_name": "PWA",
     "name": "Yamil-PWA",
     "start_url": "index.html",
-    "background_color": "#3498db",
+    "background_color": "#808080",
     "display": "standalone",
     "orientation": "portrait",
-    "theme_color": "#3498db",
+    "theme_color": "#808080",
     "icons": [
         {
             "src": "img/icons/me-gusta.png",
