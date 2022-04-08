@@ -1,15 +1,16 @@
 {
     "short_name": "PWA",
-    "name": "YamilPWA",
+    "name": "Universidad Tecnológica de Torreón",
     "start_url": "index.html",
+    "background_color": "#3498db",
     "display": "standalone",
     "orientation": "portrait",
-    "background_color":"#808080",
+    "theme_color": "#3498db",
     "icons": [
         {
             "src": "img/icons/me-gusta.png",
             "type": "image/png",
             "sizes": "72x72"
-        }],
-    "theme_color": "#808080"  
+        }
+      ]     
 }
