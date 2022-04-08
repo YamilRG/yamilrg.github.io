@@ -8,7 +8,7 @@
     "theme_color": "#808080",
     "icons": [
         {
-            "src": "img/icons/me-gusta.png",
+            "src": "img/icons/icon.png",
             "sizes": "152x152",
             "type": "image/png"
         }]     
