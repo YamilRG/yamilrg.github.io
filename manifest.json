@@ -7,7 +7,7 @@
     "background_color":"#808080",
     "icons": [
         {
-            "src": "/img/icons/icoon.png",
+            "src": "img/icons/me-gusta.png",
             "type": "image/png",
             "sizes": "72x72"
         }],
