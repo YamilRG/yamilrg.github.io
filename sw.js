@@ -27,33 +27,28 @@ importScripts('js/sw-acces.js');
 //Activacion
 
 self.addEventListener('activate', event => {
-    const respuesta = caches.keys().then(keys => {
-        keys.forEach(key =>{
-            if (key!== STATIC_CACHE && key.includes('static')){
+    const respuesta = caches.keys().then(keys =>{
+        keys.forEach(key => {
+            if(key !== STATIC_CACHE && key.includes('static')){
                 return caches.delete(key);
             }
         });
-    }); 
+    });
     event.waitUntil(respuesta);
 });
+
 
 //Estrategia de Cache
 
 	
 self.addEventListener('fetch', event => {
     const respuesta = caches.match(event.request).then( res => {
-        if(res){
-            return res;
-        }
-        else
-        {
+        if(res){return res;}
+        else{
             return fetch(event.request).then(newRes => {
                 return actualizaCacheDinamico(DYNAMIC_CACHE, event.request, newRes);
             });
         }
     });
-    event.respondWith(respuesta);
-    
 });
-
 
