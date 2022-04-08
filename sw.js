@@ -52,7 +52,7 @@ self.addEventListener('fetch', event => {
             });
         }
     });
-    event.respondUntil(respuesta);
+    event.respondWith(respuesta);
 });
 
 
