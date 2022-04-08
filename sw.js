@@ -9,7 +9,7 @@ const APP_SHEll = [
     'img/avs/Debian.png', 
     'js/app.js', 
     'js/sw-acces.js']; 
-    
+
 const APP_IMMUTABLE = [
     'https://fonts.googleapis.com/css?family=Quicksand:300,400',
     'https://fonts.googleapis.com/css?family=Lato:400,300',
@@ -51,8 +51,6 @@ self.addEventListener('fetch', event => {
         if(res){return res;}
         else{
             return fetch(event.request).then(newRes => {
-                //Agregar en el directorio /js un archivo llamdado sw-acces.js
-                //y programar la funcion actualizaCacheDinamico, para tener mas limpio el proyecto.
                 return actualizaCacheDinamico(DYNAMIC_CACHE, event.request, newRes);
             });
         }
