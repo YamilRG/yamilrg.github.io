@@ -1,6 +1,6 @@
 {
     "short_name": "PWA",
-    "name": "Universidad Tecnológica de Torreón",
+    "name": "YamilPWA",
     "start_url": "index.html",
     "display": "standalone",
     "orientation": "portrait",
