@@ -5,10 +5,8 @@ const APP_SHEll = [
     '/', 
     'index.html', 
     'css/style.css', 
-    'favicon.ico', 
-    'img/avs/Debian.png', 
-    'js/app.js', 
-    'js/sw-acces.js']; 
+    'favicon.ico',
+    'js/app.js']; 
 
 const APP_IMMUTABLE = ['https://fonts.googleapis.com/css?family=Quicksand:300,400','https://fonts.googleapis.com/css?family=Lato:400,300','https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css','js/libs/jquery.js'];
 
