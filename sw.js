@@ -5,7 +5,7 @@ const APP_SHEll = [
     '/', 
     'index.html', 
     'css/style.css', 
-    'favicon.ico',
+    //'favicon.ico',
     'js/app.js']; 
 
     const APP_SHELL_INMUTABLE = ['https://fonts.googleapis.com/css?family=Quicksand:300,400',
